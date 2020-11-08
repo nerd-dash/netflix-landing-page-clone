@@ -1,0 +1,108 @@
+:root {
+    /* colors */
+    --color-primary: #e50914;
+    --color-secondry: #141414;
+    --color-body-font-color: #FFF;
+    --color-link: #AAA;
+    --color-link-hover: var(--body-font-color);
+    /* fonts */
+    --font-primary: Arial, Helvetica, sans-serif;
+    --font-secondry: var(--font-primary);
+    --font-main-title: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    /* reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    background: var(--color-secondry);
+    font-family: var(--font-secondry);
+    color: var(--color-body-font-color)
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: .5rem;
+    color: var(--color-primary);
+    font-family: var(--font-secondry);
+    font-size: 2rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--color-link);
+    margin-right: 0.5rem;
+}
+
+header nav a:hover {
+    color: var(--color-link-hover);
+}
+
+.container {
+    margin-left: 1rem;
+}
+
+.main-title {
+    align-items: flex-start;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('https://image.tmdb.org/t/p/original/uDsfvUyhtaQZcAkwDPrRgN3SxnX.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    min-height: 20rem;
+    justify-content: center;
+}
+
+.main-title .description {
+    margin-top: .5rem;
+    margin-bottom: 5rem;
+}
+
+.main-title .container {
+    width: 70%;
+}
+
+.main-title .title {
+    margin-top: 15%;
+    font-size: 2rem;
+    font-family: var(--font-main-title);
+}
+
+.button {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: var(--color-secondry-high-contrast);
+    padding: .75rem 1.5rem;
+    margin-right: .75rem;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover {
+    background-color: var(--color-body-font-color);
+    color: var(--color-secondry);
+}
+
+.button i {
+    margin-right: .25rem;
+}
+
+.box-title {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.title-carousel {
+    margin-top: .25rem;
+}
